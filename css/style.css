@@ -1,0 +1,70 @@
+body {
+  background: #2C3C56;
+  opacity: 0;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+  /* animation: fade 3s linear 3s infinite alternate; */
+}
+
+.image-bg {
+  width: 100%;
+  height: 100vh;;
+  background: url(../img/bg.jpg)no-repeat;
+  background-size: 100% 100%;
+  transition: 1s ease-in-out;
+}
+
+.container {
+  height: 100vh;
+}
+
+.content {
+  height: 40vh;
+  transition: .8s;
+}
+
+.btn {
+  padding: .6em 1em;
+  font-size: 2em;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 4em
+}
+
+.fas {
+  position: relative;
+  left: -40px;
+  width: 0px;
+  transition: .5s;
+  opacity: 0;
+}
+
+span {
+  border-bottom: 4px solid #FFB330;
+  color: #FFB330;
+}
+
+@media (max-width: 1025px) {
+  .content {
+    height: 90vh
+  }
+}
+
+/* @keyframes fade {
+  from {
+    background: rgba(0,0,0,.9);
+  }
+  to {
+    background: rgba(0,0,0,.3);
+  }
+} */
